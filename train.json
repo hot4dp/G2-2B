@@ -1,0 +1,724 @@
+Json
+
+[
+  {
+    "instruct": "Modelar resposta",
+    "input": "Ansiedade; ECG; Camomila",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Passiflora; EEG; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Motivação\" [label=\"NCA\"];\n  \"Motivação\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Calêndula; EDA; Ansiedade",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n  \"Ansiedade\" -> \"Resposta à Calêndula\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Equinácea; Eye Tracking; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Atenção\" [label=\"NCA\"];\n  \"Atenção\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Microbiota; Passiflora; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Microbiota Intestinal\" [label=\"Modula\"];\n  \"Microbiota Intestinal\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Blend de Ansiolíticos; EEG; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Motivação\" [label=\"NCA\"];\n  \"Motivação\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Camomila; Eye Tracking; Ansiedade",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Camomila)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Calêndula; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n  \"Sistema Imune\" -> \"Resposta à Calêndula\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Blend de Ansiolíticos; EDA; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Atenção\" [label=\"NCA\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Equinácea; EEG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo Consorciado; ECG; Ansiedade",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Passiflora; EEG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\"];\n  \"Ondas Cerebrais (EEG)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Passiflora\" -> \"Sistema Gastrointestinal\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Camomila; EDA; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n  \"Sistema Imune\" -> \"Resposta à Camomila\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; Eye Tracking; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Motivação\" [label=\"NCA\"];\n  \"Motivação\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Gastrointestinal; Equinácea; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Gastrointestinal\" [label=\"Modula\"];\n  \"Sistema Gastrointestinal\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Gastrointestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Camomila; EEG; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Atenção\" [label=\"NCA\"];\n  \"Atenção\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Calêndula; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Calêndula)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Calêndula\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; ECG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Sistema Gastrointestinal\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Blend de Ansiolíticos; Eye Tracking; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Ansiedade; Equinácea; EDA",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo Consorciado; EEG; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Camomila; ECG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Tratamento (Camomila)\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Camomila\" -> \"Sistema Gastrointestinal\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Calêndula; EEG; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n  \"Atenção\" -> \"Resposta à Calêndula\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Passiflora; EDA; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Calêndula; EDA",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Equinácea; ECG; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Motivação\" [label=\"NCA\"];\n  \"Motivação\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; Eye Tracking; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Camomila; ECG; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n  \"Atenção\" -> \"Resposta à Camomila\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; EEG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Ansiedade; Passiflora; Eye Tracking",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Blend de Ansiolíticos; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; EDA; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Motivação\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Camomila; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Cardiovascular; Calêndula; EEG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Sistema Cardiovascular\" [label=\"Modula\"];\n  \"Sistema Cardiovascular\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Cardiovascular\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Passiflora; EDA; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Atenção\" [label=\"NCA\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Calêndula; EDA",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Equinácea; ECG; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Motivação\" [label=\"NCA\"];\n  \"Motivação\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; Eye Tracking; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Camomila; ECG; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n  \"Atenção\" -> \"Resposta à Camomila\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; EEG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Ansiedade; Passiflora; Eye Tracking",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Blend de Ansiolíticos; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; EDA; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Motivação\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Camomila; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Cardiovascular; Calêndula; EEG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Sistema Cardiovascular\" [label=\"Modula\"];\n  \"Sistema Cardiovascular\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Cardiovascular\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Passiflora; EDA; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Atenção\" [label=\"NCA\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Calêndula; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Tratamento (Calêndula)\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Calêndula\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Equinácea; EDA; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Equinácea\" [label=\"Predizem\"];\n  \"Atenção\" -> \"Resposta à Equinácea\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Passiflora; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Cardiovascular; Camomila; EDA",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Sistema Cardiovascular\" [label=\"Modula\"];\n  \"Sistema Cardiovascular\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Cardiovascular\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Calêndula; EEG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Passiflora; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Passiflora\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Equinácea; ECG; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Equinácea\" [label=\"Predizem\"];\n  \"Motivação\" -> \"Resposta à Equinácea\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Camomila; EEG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Ansiedade; Calêndula; Eye Tracking",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo Consorciado; EDA; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Camomila; Eye Tracking; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Camomila)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Camomila\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; EEG; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Sistema Cardiovascular\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Equinácea; ECG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Passiflora; Eye Tracking",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Camomila; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Calêndula; EEG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Resposta ao Tratamento (Calêndula)\" [label=\"PLS-SEM\"];\n  \"Ondas Cerebrais (EEG)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Calêndula\" -> \"Sistema Gastrointestinal\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Equinácea; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Equinácea\" [label=\"Predizem\"];\n  \"Sistema Gastrointestinal\" -> \"Resposta à Equinácea\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Passiflora; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Ansiedade; Camomila; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Equinácea; EDA; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Atenção\" [label=\"NCA\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Passiflora; Eye Tracking; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Passiflora\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Calêndula; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n  \"Sistema Cardiovascular\" -> \"Resposta à Calêndula\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Camomila; ECG; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Gastrointestinal; Equinácea; Eye Tracking",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Gastrointestinal\" [label=\"Modula\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Sistema Gastrointestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo Consorciado; EEG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; EDA; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Gastrointestinal\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Camomila; Eye Tracking; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n  \"Sistema Cardiovascular\" -> \"Resposta à Camomila\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; ECG; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Gastrointestinal; Passiflora; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Sistema Gastrointestinal\" [label=\"Modula\"];\n  \"Sistema Gastrointestinal\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Gastrointestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Camomila; Eye Tracking; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; EEG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Ondas Cerebrais (EEG)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Calêndula; ECG; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n  \"Atenção\" -> \"Resposta à Calêndula\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Passiflora; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Camomila; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Equinácea; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Calêndula; EDA; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Calêndula)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Calêndula\" -> \"Sistema Gastrointestinal\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; Eye Tracking; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Atenção\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Equinácea; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Calêndula; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Passiflora; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Camomila; EDA; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Camomila)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Camomila\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Equinácea; EEG; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Equinácea\" [label=\"Predizem\"];\n  \"Sistema Cardiovascular\" -> \"Resposta à Equinácea\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; Eye Tracking; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Ansiedade; Equinácea; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo Consorciado; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Camomila; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Tratamento (Camomila)\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Camomila\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Calêndula; EEG; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n  \"Motivação\" -> \"Resposta à Calêndula\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Passiflora; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Cardiovascular; Equinácea; EDA",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Calêndula; ECG; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Atenção\" [label=\"NCA\"];\n  \"Atenção\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Camomila; Eye Tracking; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Camomila)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Camomila\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Sistema Imune\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Equinácea; EEG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Ansiedade; Calêndula; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo Consorciado; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Passiflora; EDA; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Passiflora\" -> \"Sistema Gastrointestinal\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Camomila; EEG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n  \"Sistema Imune\" -> \"Resposta à Camomila\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; ECG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Equinácea; Eye Tracking",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Passiflora; EDA; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Gastrointestinal\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Camomila; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n  \"Sistema Cardiovascular\" -> \"Resposta à Camomila\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; EEG; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Gastrointestinal; Passiflora; EDA",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Sistema Gastrointestinal\" [label=\"Modula\"];\n  \"Sistema Gastrointestinal\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Gastrointestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Camomila; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; EEG; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Ondas Cerebrais (EEG)\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Calêndula; Eye Tracking; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n  \"Atenção\" -> \"Resposta à Calêndula\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Passiflora; ECG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Camomila; EDA",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Equinácea; EEG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Calêndula; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Calêndula)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Calêndula\" -> \"Sistema Gastrointestinal\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; EDA; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Sistema Imune\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Camomila; Eye Tracking; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Equinácea; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Passiflora; EEG; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Sistema Cardiovascular\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Camomila; EDA; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Camomila)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Camomila\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Equinácea; ECG; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Equinácea\" [label=\"Predizem\"];\n  \"Atenção\" -> \"Resposta à Equinácea\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; EDA; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Passiflora; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Equinácea; Eye Tracking; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Calêndula; EEG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Resposta ao Tratamento (Calêndula)\" [label=\"PLS-SEM\"];\n  \"Ondas Cerebrais (EEG)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Calêndula\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; Eye Tracking; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Motivação\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Camomila; EDA; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Cardiovascular; Equinácea; Eye Tracking",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Cardiovascular\" [label=\"Modula\"];\n  \"Sistema Cardiovascular\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Sistema Cardiovascular\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo Consorciado; ECG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Passiflora; EEG; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Ondas Cerebrais (EEG)\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\"];\n  \"Ondas Cerebrais (EEG)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Passiflora\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Camomila; ECG; Motivação",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n  \"Motivação\" -> \"Resposta à Camomila\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Calêndula; Eye Tracking; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Cardiovascular; Equinácea; ECG",
+    "output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Cardiovascular\" [label=\"Modula\"];\n  \"Sistema Cardiovascular\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Sistema Cardiovascular\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Camomila; EDA; Atenção",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Atenção\" [label=\"NCA\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Calêndula; Eye Tracking; Sistema Cardiovascular",
+    "output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Calêndula)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Sistema Cardiovascular\" [label=\"NCA\"];\n  \"Calêndula\" -> \"Sistema Cardiovascular\" [label=\"Modula (PLS-SEM)\"];\n}"
+  },
+  {
+    "instruct": "Identificar biomarcadores",
+    "input": "Resposta à Passiflora; ECG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n  \"Sistema Gastrointestinal\" -> \"Resposta à Passiflora\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Avaliar eficácia",
+    "input": "Tratamento com Equinácea; EDA; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Modelar resposta",
+    "input": "Sistema Imune; Camomila; Eye Tracking",
+    "output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Analisar correlação",
+    "input": "Cultivo de Calêndula; EEG; Sistema Gastrointestinal",
+    "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ondas Cerebrais (EEG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Sistema Gastrointestinal\" [label=\"NCA\"];\n  \"Sistema Gastrointestinal\" -> \"Ondas Cerebrais (EEG)\" [label=\"Influencia (NCA)\"];\n}"
+  },
+  {
+    "instruct": "Prever resposta",
+    "input": "Equinácea; EDA; Sistema Imune",
+    "output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Equinácea)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula (PLS-SEM)\"];\n}"
+  }
+]
